@@ -8,3 +8,9 @@ F:\Mentrel\Perwij\Perwij\obj\Debug\Perwij.pdb
 F:\Mentrel\Calculator\Perwij\Perwij\bin\Debug\Perwij.exe.config
 F:\Mentrel\Calculator\Perwij\Perwij\obj\Debug\Perwij.exe
 F:\Mentrel\Calculator\Perwij\Perwij\obj\Debug\Perwij.pdb
+F:\Mentrel\Calculator\Perwij\Perwij\bin\Debug\Perwij.exe
+F:\Mentrel\Calculator\Perwij\Perwij\bin\Debug\Perwij.pdb
+F:\Mentrel\Calculator\Perwij\Perwij\obj\Debug\Perwij.csprojResolveAssemblyReference.cache
+F:\Mentrel\Calculator\Perwij\Perwij\obj\Debug\Perwij.Form1.resources
+F:\Mentrel\Calculator\Perwij\Perwij\obj\Debug\Perwij.Properties.Resources.resources
+F:\Mentrel\Calculator\Perwij\Perwij\obj\Debug\Perwij.csproj.GenerateResource.Cache
