@@ -1,0 +1,10 @@
+F:\Mentrel\Perwij\Perwij\bin\Debug\Perwij.exe.config
+F:\Mentrel\Perwij\Perwij\bin\Debug\Perwij.exe
+F:\Mentrel\Perwij\Perwij\bin\Debug\Perwij.pdb
+F:\Mentrel\Perwij\Perwij\obj\Debug\Perwij.Properties.Resources.resources
+F:\Mentrel\Perwij\Perwij\obj\Debug\Perwij.csproj.GenerateResource.Cache
+F:\Mentrel\Perwij\Perwij\obj\Debug\Perwij.exe
+F:\Mentrel\Perwij\Perwij\obj\Debug\Perwij.pdb
+F:\Mentrel\Calculator\Perwij\Perwij\bin\Debug\Perwij.exe.config
+F:\Mentrel\Calculator\Perwij\Perwij\obj\Debug\Perwij.exe
+F:\Mentrel\Calculator\Perwij\Perwij\obj\Debug\Perwij.pdb
