@@ -28,54 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button11 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
+            this.summ = new System.Windows.Forms.Button();
+            this.X = new System.Windows.Forms.Button();
+            this.delet = new System.Windows.Forms.Button();
+            this.minus = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // button11
+            // summ
             // 
-            this.button11.Location = new System.Drawing.Point(162, 91);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(44, 29);
-            this.button11.TabIndex = 10;
-            this.button11.Text = "+";
-            this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.Calcued);
+            this.summ.Location = new System.Drawing.Point(162, 91);
+            this.summ.Name = "summ";
+            this.summ.Size = new System.Drawing.Size(44, 29);
+            this.summ.TabIndex = 10;
+            this.summ.Text = "+";
+            this.summ.UseVisualStyleBackColor = true;
+            this.summ.Click += new System.EventHandler(this.Calcued);
             // 
-            // button14
+            // X
             // 
-            this.button14.Location = new System.Drawing.Point(12, 91);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(44, 29);
-            this.button14.TabIndex = 13;
-            this.button14.Text = "X";
-            this.button14.UseVisualStyleBackColor = true;
-            this.button14.Click += new System.EventHandler(this.Calcued);
+            this.X.Location = new System.Drawing.Point(12, 91);
+            this.X.Name = "X";
+            this.X.Size = new System.Drawing.Size(44, 29);
+            this.X.TabIndex = 13;
+            this.X.Text = "X";
+            this.X.UseVisualStyleBackColor = true;
+            this.X.Click += new System.EventHandler(this.Calcued);
             // 
-            // button15
+            // delet
             // 
-            this.button15.Location = new System.Drawing.Point(62, 91);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(44, 29);
-            this.button15.TabIndex = 14;
-            this.button15.Text = "/";
-            this.button15.UseVisualStyleBackColor = true;
-            this.button15.Click += new System.EventHandler(this.Calcued);
+            this.delet.Location = new System.Drawing.Point(62, 91);
+            this.delet.Name = "delet";
+            this.delet.Size = new System.Drawing.Size(44, 29);
+            this.delet.TabIndex = 14;
+            this.delet.Text = "/";
+            this.delet.UseVisualStyleBackColor = true;
+            this.delet.Click += new System.EventHandler(this.Calcued);
             // 
-            // button16
+            // minus
             // 
-            this.button16.Location = new System.Drawing.Point(112, 91);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(44, 29);
-            this.button16.TabIndex = 15;
-            this.button16.Text = "-";
-            this.button16.UseVisualStyleBackColor = true;
-            this.button16.Click += new System.EventHandler(this.Calcued);
+            this.minus.Location = new System.Drawing.Point(112, 91);
+            this.minus.Name = "minus";
+            this.minus.Size = new System.Drawing.Size(44, 29);
+            this.minus.TabIndex = 15;
+            this.minus.Text = "-";
+            this.minus.UseVisualStyleBackColor = true;
+            this.minus.Click += new System.EventHandler(this.Calcued);
             // 
             // textBox1
             // 
@@ -107,10 +107,10 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button16);
-            this.Controls.Add(this.button15);
-            this.Controls.Add(this.button14);
-            this.Controls.Add(this.button11);
+            this.Controls.Add(this.minus);
+            this.Controls.Add(this.delet);
+            this.Controls.Add(this.X);
+            this.Controls.Add(this.summ);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -120,10 +120,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button summ;
+        private System.Windows.Forms.Button X;
+        private System.Windows.Forms.Button delet;
+        private System.Windows.Forms.Button minus;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;

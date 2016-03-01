@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Perwij
@@ -18,28 +11,14 @@ namespace Perwij
         }
         public void Calcued(object sender, EventArgs e)
         {
+            CalculatorFactory sFactory = new CalculatorFactory();
             string first = textBox1.Text;
             string two = textBox2.Text;
-            int firstInt = Convert.ToInt32(first);
-            int twoInt = Convert.ToInt32(two);
+            double firstDouble = Convert.ToDouble(first);
+            double twoDouble = Convert.ToDouble(two);
             double result = 0;
-            switch (((Button)sender).Name)
-            {
-                case  "+":
-                    result = firstInt + twoInt;
-                    break;
-                case "-": 
-                    result = firstInt - twoInt;
-                    break;
-                case "X": 
-                    result = firstInt * twoInt;
-                    break;
-                case "/":
-                    result = firstInt / twoInt;
-                    break;
-                   
-            }
-           
+            ICalculator calculator = sFactory.Calculator(((Button) sender).Name);
+            result = calculator.Calculator(firstDouble, twoDouble);
             textBox3.Text = result.ToString();
         }
 
@@ -48,4 +27,6 @@ namespace Perwij
 
         }
     }
+
+   
 }
