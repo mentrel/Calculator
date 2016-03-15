@@ -11,20 +11,23 @@ namespace Perwij
         }
         public void Calcued(object sender, EventArgs e)
         {
-            CalculatorFactory sFactory = new CalculatorFactory();
             string first = textBox1.Text;
             string two = textBox2.Text;
             double firstDouble = Convert.ToDouble(first);
             double twoDouble = Convert.ToDouble(two);
             double result = 0;
-            ICalculator calculator = sFactory.Calculator(((Button) sender).Name);
+            ICalculator calculator = CalculatorFactory.Calculator(((Button) sender).Name);
             result = calculator.Calculator(firstDouble, twoDouble);
             textBox3.Text = result.ToString();
         }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        public void SingleCalcued(object sender, EventArgs e)
         {
-
+            string first = textBox1.Text;
+            double firstDouble = Convert.ToDouble(first);
+            double result = 0;
+            ISingle calculator = SingleCalculatorFactory.CreateCalculator(((Button)sender).Name);
+            result = calculator.CreateCalculator(firstDouble);
+            textBox3.Text = result.ToString();
         }
     }
 

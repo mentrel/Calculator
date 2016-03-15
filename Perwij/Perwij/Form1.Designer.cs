@@ -35,6 +35,9 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.sin = new System.Windows.Forms.Button();
+            this.x2 = new System.Windows.Forms.Button();
+            this.Koren = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // summ
@@ -83,7 +86,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(193, 20);
             this.textBox1.TabIndex = 16;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
@@ -99,11 +101,43 @@
             this.textBox3.Size = new System.Drawing.Size(193, 20);
             this.textBox3.TabIndex = 18;
             // 
+            // sin
+            // 
+            this.sin.Location = new System.Drawing.Point(13, 126);
+            this.sin.Name = "sin";
+            this.sin.Size = new System.Drawing.Size(44, 29);
+            this.sin.TabIndex = 19;
+            this.sin.Text = "sin";
+            this.sin.UseVisualStyleBackColor = true;
+            this.sin.Click += new System.EventHandler(this.SingleCalcued);
+            // 
+            // x2
+            // 
+            this.x2.Location = new System.Drawing.Point(63, 126);
+            this.x2.Name = "x2";
+            this.x2.Size = new System.Drawing.Size(44, 29);
+            this.x2.TabIndex = 20;
+            this.x2.Text = "x^2";
+            this.x2.UseVisualStyleBackColor = true;
+            this.x2.Click += new System.EventHandler(this.SingleCalcued);
+            // 
+            // Koren
+            // 
+            this.Koren.Location = new System.Drawing.Point(113, 126);
+            this.Koren.Name = "Koren";
+            this.Koren.Size = new System.Drawing.Size(43, 29);
+            this.Koren.TabIndex = 21;
+            this.Koren.Text = "sqrt";
+            this.Koren.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.Koren);
+            this.Controls.Add(this.x2);
+            this.Controls.Add(this.sin);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -127,6 +161,9 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button sin;
+        private System.Windows.Forms.Button x2;
+        private System.Windows.Forms.Button Koren;
 
     }
 }

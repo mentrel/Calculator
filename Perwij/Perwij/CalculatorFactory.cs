@@ -6,29 +6,24 @@ using System.Threading.Tasks;
 
 namespace Perwij
 {
-    class CalculatorFactory
+    public static class CalculatorFactory
     {
-        public ICalculator Calculator(String e)
+        public static ICalculator Calculator(String e)
         {
-            ICalculator calc;
             switch (e)
             {
                 case "summ":
-                    calc = new SumCalculator();
-                    
-                    break;
+                    return new SumCalculator();
                 case "minus":
-                    calc = new MinusCalculator();
-                    break;
+                    return new MinusCalculator();
                 case "X":
-                    calc = new UmnogCalculator();
-                    break;
+                    return new UmnogCalculator();
                 case "delet":
-                    calc = new DeletCalculator();
-                    break;
-                default: throw new ArgumentException("Неизвестная операция во имя Сатаны","name");
+                    return new DeletCalculator();
+                default: 
+                    throw new ArgumentException("Неизвестная операция во имя Сатаны","name");
             }
-            return calc;
+          
         }
     }
 }
