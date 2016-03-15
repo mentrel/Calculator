@@ -1,4 +1,4 @@
-﻿namespace Perwij
+﻿namespace Perwij.Calculator
 {
     public interface ICalculator
     {

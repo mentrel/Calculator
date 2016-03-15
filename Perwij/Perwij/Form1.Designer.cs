@@ -129,6 +129,7 @@
             this.Koren.TabIndex = 21;
             this.Koren.Text = "sqrt";
             this.Koren.UseVisualStyleBackColor = true;
+            this.Koren.Click += new System.EventHandler(this.SingleCalcued);
             // 
             // Form1
             // 
