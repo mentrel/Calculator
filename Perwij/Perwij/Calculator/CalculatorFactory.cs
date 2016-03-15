@@ -16,6 +16,8 @@ namespace Perwij.Calculator
                     return new UmnogCalculator();
                 case "delet":
                     return new DeletCalculator();
+                case "stepen":
+                    return new Stepen();
                 default: 
                     throw new ArgumentException("Неизвестная операция во имя Сатаны","name");
             }

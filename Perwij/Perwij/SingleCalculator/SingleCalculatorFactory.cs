@@ -14,6 +14,10 @@ namespace Perwij.SingleCalculator
                     return new Cvadrat();
                 case "Koren":
                     return new Coren();
+                case "cos":
+                    return new Cosinus();
+                case "log":
+                    return new Logar();
                 default:
                     throw new ArgumentException("Неизвестная операция во имя Сатаны", "name");
             }

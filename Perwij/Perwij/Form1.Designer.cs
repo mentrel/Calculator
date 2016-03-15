@@ -38,6 +38,9 @@
             this.sin = new System.Windows.Forms.Button();
             this.x2 = new System.Windows.Forms.Button();
             this.Koren = new System.Windows.Forms.Button();
+            this.stepen = new System.Windows.Forms.Button();
+            this.cos = new System.Windows.Forms.Button();
+            this.log = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // summ
@@ -131,11 +134,44 @@
             this.Koren.UseVisualStyleBackColor = true;
             this.Koren.Click += new System.EventHandler(this.SingleCalcued);
             // 
+            // stepen
+            // 
+            this.stepen.Location = new System.Drawing.Point(212, 91);
+            this.stepen.Name = "stepen";
+            this.stepen.Size = new System.Drawing.Size(44, 29);
+            this.stepen.TabIndex = 22;
+            this.stepen.Text = "x^y";
+            this.stepen.UseVisualStyleBackColor = true;
+            this.stepen.Click += new System.EventHandler(this.Calcued);
+            // 
+            // cos
+            // 
+            this.cos.Location = new System.Drawing.Point(162, 126);
+            this.cos.Name = "cos";
+            this.cos.Size = new System.Drawing.Size(43, 29);
+            this.cos.TabIndex = 23;
+            this.cos.Text = "cos";
+            this.cos.UseVisualStyleBackColor = true;
+            this.cos.Click += new System.EventHandler(this.SingleCalcued);
+            // 
+            // log
+            // 
+            this.log.Location = new System.Drawing.Point(213, 126);
+            this.log.Name = "log";
+            this.log.Size = new System.Drawing.Size(43, 29);
+            this.log.TabIndex = 24;
+            this.log.Text = "log";
+            this.log.UseVisualStyleBackColor = true;
+            this.log.Click += new System.EventHandler(this.SingleCalcued);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.log);
+            this.Controls.Add(this.cos);
+            this.Controls.Add(this.stepen);
             this.Controls.Add(this.Koren);
             this.Controls.Add(this.x2);
             this.Controls.Add(this.sin);
@@ -165,6 +201,9 @@
         private System.Windows.Forms.Button sin;
         private System.Windows.Forms.Button x2;
         private System.Windows.Forms.Button Koren;
+        private System.Windows.Forms.Button stepen;
+        private System.Windows.Forms.Button cos;
+        private System.Windows.Forms.Button log;
 
     }
 }
