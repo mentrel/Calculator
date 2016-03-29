@@ -2,6 +2,6 @@
 {
     public interface ISingle
     {
-        double CreateCalculator(double one);
+        double CreateCalculate(double one);
     }
 }

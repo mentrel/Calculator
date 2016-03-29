@@ -2,7 +2,7 @@
 {
     public class Cvadrat : ISingle
     {
-        public double CreateCalculator(double one)
+        public double CreateCalculate(double one)
         {
             return one * one;
         }

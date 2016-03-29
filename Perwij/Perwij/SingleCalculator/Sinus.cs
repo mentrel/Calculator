@@ -4,7 +4,7 @@ namespace Perwij.SingleCalculator
 {
     public class Sinus : ISingle
     {
-        public double CreateCalculator(double one)
+        public double CreateCalculate(double one)
         {
             return Math.Sin(one);
         }

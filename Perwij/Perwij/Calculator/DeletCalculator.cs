@@ -1,8 +1,8 @@
 ﻿namespace Perwij.Calculator
 {
-    class DeletCalculator: ICalculator
+    public class DeletCalculator: ICalculator
     {
-        public double Calculator(double one, double two)
+        public double Calculate(double one, double two)
         {
             return one / two;
         }

@@ -18,7 +18,7 @@ namespace Perwij
             double firstDouble = Convert.ToDouble(first);
             double twoDouble = Convert.ToDouble(two);
             ICalculator calculator = CalculatorFactory.Calculator(((Button) sender).Name);
-            var result = calculator.Calculator(firstDouble, twoDouble);
+            var result = calculator.Calculate(firstDouble, twoDouble);
             textBox3.Text = result.ToString();
         }
         private void SingleCalcued(object sender, EventArgs e)
@@ -26,7 +26,7 @@ namespace Perwij
             string first = textBox1.Text;
             double firstDouble = Convert.ToDouble(first);
             ISingle calculator = SingleCalculatorFactory.CreateCalculator(((Button)sender).Name);
-            var result = calculator.CreateCalculator(firstDouble);
+            var result = calculator.CreateCalculate(firstDouble);
             textBox3.Text = result.ToString();
         }
     }
