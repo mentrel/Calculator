@@ -6,12 +6,18 @@ namespace Perwij.Tests.SingleCalculator
     [TestFixture]
     public class LogarTests
     {
-        [Test]
-        public void LogarTest()
+        [TestCase(1, 0)]
+        [TestCase(10, 1)]
+        [TestCase(100, 2)]
+        [TestCase(1000, 3)]
+        [TestCase(10000, 4)]
+        [TestCase(100000, 5)]
+        [TestCase(1000000, 6)]
+        public void LogarTest(double first, double expected)
         {
             ISingle logarCalculator = new Logar();
-            double result = logarCalculator.CreateCalculate(100);
-            Assert.AreEqual(2, result);
+            double result = logarCalculator.CreateCalculate(first);
+            Assert.AreEqual(expected, result);
         }
     }
 }

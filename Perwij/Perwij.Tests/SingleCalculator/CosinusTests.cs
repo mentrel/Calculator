@@ -6,12 +6,12 @@ namespace Perwij.Tests.SingleCalculator
     [TestFixture]
     public class CosinusTests
     {
-        [Test]
-        public void CosinusTest()
+        [TestCase(0, 1)]
+        public void CosinusTest(double first, double expected)
         {
             ISingle cosinusCalculator = new Cosinus();
-            double result = cosinusCalculator.CreateCalculate(0);
-            Assert.AreEqual(1, result);
+            double result = cosinusCalculator.CreateCalculate(first);
+            Assert.AreEqual(expected, result);
         }
     }
 }
