@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using System;
+using NUnit.Framework;
 using Perwij.Calculator;
 
 namespace Perwij.Tests.Calculator
@@ -17,6 +18,12 @@ namespace Perwij.Tests.Calculator
             ICalculator delet = new DeletCalculator();
             double result = delet.Calculate(first, two);
             Assert.AreEqual(expected, result);
+        }
+        [Test]
+        public void DeletExceptionTest()
+        {
+            ICalculator delet = new DeletCalculator();
+            Assert.Throws<ArgumentException>(() => delet.Calculate(2, 0));
         }
     }
 }

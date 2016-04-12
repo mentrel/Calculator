@@ -6,7 +6,7 @@ namespace Perwij.SingleCalculator
     {
         public double CreateCalculate(double one)
         {
-            return Math.Cos(one);
+        return Math.Cos(one);
         }
     }
 }

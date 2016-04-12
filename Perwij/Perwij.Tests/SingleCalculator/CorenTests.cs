@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using System;
+using NUnit.Framework;
 using Perwij.SingleCalculator;
 
 namespace Perwij.Tests.SingleCalculator
@@ -19,6 +20,13 @@ namespace Perwij.Tests.SingleCalculator
             ISingle corenCalculator = new Coren();
             double result = corenCalculator.CreateCalculate(first);
             Assert.AreEqual(expected, result);
+        }
+
+        [Test]
+        public void CorenExceptionTest()
+        {
+            ISingle corenCalculator = new Coren();
+            Assert.Throws<ArgumentException>(() => corenCalculator.CreateCalculate(-1));
         }
     }
 }

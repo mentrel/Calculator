@@ -6,6 +6,10 @@ namespace Perwij.SingleCalculator
     {
         public double CreateCalculate(double one)
         {
+            if (one < 0)
+            {
+                throw new ArgumentException("Насяльник, аргумент меньше нуля", "one");
+            }
             return Math.Log10(one);
         }
     }

@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using System;
+using NUnit.Framework;
 using Perwij.SingleCalculator;
 
 namespace Perwij.Tests.SingleCalculator
@@ -13,5 +14,7 @@ namespace Perwij.Tests.SingleCalculator
             double result = cosinusCalculator.CreateCalculate(first);
             Assert.AreEqual(expected, result);
         }
+
+       
     }
 }

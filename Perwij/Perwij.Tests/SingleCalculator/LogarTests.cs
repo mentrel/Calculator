@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using System;
+using NUnit.Framework;
 using Perwij.SingleCalculator;
 
 namespace Perwij.Tests.SingleCalculator
@@ -18,6 +19,12 @@ namespace Perwij.Tests.SingleCalculator
             ISingle logarCalculator = new Logar();
             double result = logarCalculator.CreateCalculate(first);
             Assert.AreEqual(expected, result);
+        }
+        [Test]
+        public void LogarExceptionTest()
+        {
+            ISingle logarCalculator = new Logar();
+            Assert.Throws<ArgumentException>(() => logarCalculator.CreateCalculate(-1));
         }
     }
 }
