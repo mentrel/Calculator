@@ -2,8 +2,16 @@
 
 namespace Perwij.Calculator
 {
+    /// <summary>
+    /// Фабрика для функций, выполняющих действия над двумя аргументами.
+    /// </summary>
     public static class CalculatorFactory
     {
+        /// <summary>
+        /// Функция реализации функций калькулятора.
+        /// </summary>
+        /// <param name="e"></param>
+        /// <returns></returns>
         public static ICalculator Calculator(String e)
         {
             switch (e)

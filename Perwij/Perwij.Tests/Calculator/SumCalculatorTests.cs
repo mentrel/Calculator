@@ -6,6 +6,12 @@ namespace Perwij.Tests.Calculator
     [TestFixture]
     public class SumCalculatorTests
     {
+        /// <summary>
+        /// Функция тестирования суммирования двух введённых чисел
+        /// </summary>
+        /// <param name="first"></param>
+        /// <param name="two"></param>
+        /// <param name="expected"></param>
         [TestCase(2,2,4)]
         [TestCase(2, 3, 5)]
         [TestCase(2, 4, 6)]

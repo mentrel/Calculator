@@ -4,6 +4,11 @@ namespace Perwij.SingleCalculator
 {
     public class Logar : ISingle
     {
+        /// <summary>
+        /// Функция нахождения десятичного логарифма из введённого числа.
+        /// </summary>
+        /// <param name="one"></param>
+        /// <returns></returns>
         public double CreateCalculate(double one)
         {
             if (one < 0)

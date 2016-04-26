@@ -7,6 +7,11 @@ namespace Perwij.Tests.SingleCalculator
     [TestFixture]
     public class LogarTests
     {
+        /// <summary>
+        /// Функция тестирования извлечения десятичного логарифма из введённого числа.
+        /// </summary>
+        /// <param name="first"></param>
+        /// <param name="expected"></param>
         [TestCase(1, 0)]
         [TestCase(10, 1)]
         [TestCase(100, 2)]
@@ -20,6 +25,9 @@ namespace Perwij.Tests.SingleCalculator
             double result = logarCalculator.CreateCalculate(first);
             Assert.AreEqual(expected, result);
         }
+        /// <summary>
+        /// Функция обнаружения исключений.
+        /// </summary>
         [Test]
         public void LogarExceptionTest()
         {

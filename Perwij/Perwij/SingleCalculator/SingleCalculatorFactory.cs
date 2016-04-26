@@ -4,6 +4,11 @@ namespace Perwij.SingleCalculator
 {
     public static class SingleCalculatorFactory
     {
+        /// <summary>
+        /// Фабрика для функций одного аргумента
+        /// </summary>
+        /// <param name="e"></param>
+        /// <returns></returns>
         public static ISingle CreateCalculator(String e)
         {
             switch (e)

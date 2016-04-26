@@ -7,6 +7,12 @@ namespace Perwij.Tests.Calculator
     [TestFixture]
     public class DeletCalculatorTests
     {
+        /// <summary>
+        /// Функция тестирования деления одного введённого числа на другое.
+        /// </summary>
+        /// <param name="first"></param>
+        /// <param name="two"></param>
+        /// <param name="expected"></param>
         [TestCase(2,2,1)]
         [TestCase(2, 0.5, 4)]
         [TestCase(8, 2, 4)]
@@ -19,6 +25,10 @@ namespace Perwij.Tests.Calculator
             double result = delet.Calculate(first, two);
             Assert.AreEqual(expected, result);
         }
+
+        /// <summary>
+        /// Функция нахождения исключений.
+        /// </summary>
         [Test]
         public void DeletExceptionTest()
         {

@@ -6,6 +6,11 @@ namespace Perwij.Tests.SingleCalculator
     [TestFixture]
     public class SinusTests
     {
+        /// <summary>
+        /// Функция тестирования нахождения синуса из введённого числа.
+        /// </summary>
+        /// <param name="first"></param>
+        /// <param name="expected"></param>
         [TestCase(0, 0)]
         public void SinusTest(double first, double expected)
         {

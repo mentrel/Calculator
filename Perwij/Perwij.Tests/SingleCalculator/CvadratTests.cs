@@ -6,6 +6,11 @@ namespace Perwij.Tests.SingleCalculator
     [TestFixture]
     public class CvadratTests
     {
+        /// <summary>
+        /// Функция тестирования возведения введённого числа в квадрат
+        /// </summary>
+        /// <param name="first"></param>
+        /// <param name="expected"></param>
         [TestCase(1, 1)]
         [TestCase(2, 4)]
         [TestCase(4, 16)]

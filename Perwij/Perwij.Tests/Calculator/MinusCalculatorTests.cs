@@ -6,6 +6,12 @@ namespace Perwij.Tests.Calculator
     [TestFixture]
     public class MinusCalculatorTests
     {
+        /// <summary>
+        /// Функция тестирования вычитания второго введённого числа из первого.
+        /// </summary>
+        /// <param name="first"></param>
+        /// <param name="two"></param>
+        /// <param name="expected"></param>
         [TestCase(2, 2, 0)]
         [TestCase(2, 0.5,1.5)]
         [TestCase(8, 2, 6)]

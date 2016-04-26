@@ -3,8 +3,17 @@ using Perwij.Calculator;
 
 namespace Perwij
 {
+    /// <summary>
+    /// Класс возведения одного числа в степень, равную второму числу.
+    /// </summary>
     public class Stepen : ICalculator
     {
+        /// <summary>
+        /// Функция возведения одного числа в степень, равную второму числу.
+        /// </summary>
+        /// <param name="one"></param>
+        /// <param name="two"></param>
+        /// <returns></returns>
         public double Calculate(double one, double two)
         {
             double result = Math.Pow(one, two);
